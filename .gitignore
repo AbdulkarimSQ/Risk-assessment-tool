@@ -205,16 +205,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
-echo "
-# Python
-__pycache__/
-*.pyc
 
-# Virtual env
-.venv/
-
-# Outputs
+# Local project outputs
 risk_assessment.json
 risk_assessment.csv
 reports/
-" >> .gitignore
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
