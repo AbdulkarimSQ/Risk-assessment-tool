@@ -1,0 +1,243 @@
+[
+  {
+    "asset_id": "SCADA-001",
+    "name": "Primary SCADA System - Control Room A",
+    "asset_type": "SCADA/ICS",
+    "criticality": "Mission Critical",
+    "location": "Main Control Room - Plant 1",
+    "owner": "Operations Department",
+    "vulnerabilities": [
+      "Critical - Unpatched Windows Server 2016",
+      "High - Weak authentication protocols",
+      "Medium - Missing network segmentation"
+    ],
+    "threats": [
+      "Cyber Attack",
+      "Ransomware",
+      "Insider Threat"
+    ],
+    "existing_controls": [
+      "Firewall with restricted rules",
+      "Access logging enabled",
+      "Physical access control"
+    ],
+    "control_effectiveness": "Adequate",
+    "last_assessment": "2024-01-15"
+  },
+  {
+    "asset_id": "DB-PROD-01",
+    "name": "Production Database - SAP ERP",
+    "asset_type": "Database Server",
+    "criticality": "High",
+    "location": "Data Center - Building B",
+    "owner": "IT Department",
+    "vulnerabilities": [
+      "High - SQL injection vulnerability",
+      "Medium - Outdated encryption protocols"
+    ],
+    "threats": [
+      "Data Breach",
+      "Cyber Attack",
+      "Insider Threat"
+    ],
+    "existing_controls": [
+      "Database encryption at rest",
+      "Regular backups (daily)",
+      "Role-based access control",
+      "Intrusion detection system",
+      "Security patch management"
+    ],
+    "control_effectiveness": "Strong",
+    "last_assessment": "2024-02-01"
+  },
+  {
+    "asset_id": "NET-CORE-01",
+    "name": "Core Network Switch - Plant Network",
+    "asset_type": "Network Infrastructure",
+    "criticality": "Mission Critical",
+    "location": "Network Room - Plant 1",
+    "owner": "Network Operations",
+    "vulnerabilities": [
+      "Critical - Default SNMP community strings",
+      "High - Unencrypted management traffic"
+    ],
+    "threats": [
+      "DDoS",
+      "Cyber Attack",
+      "Physical Breach"
+    ],
+    "existing_controls": [
+      "Network monitoring",
+      "Physical security"
+    ],
+    "control_effectiveness": "Weak",
+    "last_assessment": "2023-11-20"
+  },
+  {
+    "asset_id": "PLC-PUMP-05",
+    "name": "Pump Control PLC - Station 5",
+    "asset_type": "PLC/Industrial Controller",
+    "criticality": "High",
+    "location": "Pump Station 5",
+    "owner": "Engineering Department",
+    "vulnerabilities": [
+      "Critical - No authentication required",
+      "High - Firmware outdated by 3 years",
+      "Medium - Exposed to plant network"
+    ],
+    "threats": [
+      "Cyber Attack",
+      "System Failure",
+      "Malware"
+    ],
+    "existing_controls": [
+      "Network segmentation (partial)",
+      "Physical access control"
+    ],
+    "control_effectiveness": "Weak",
+    "last_assessment": "2024-01-10"
+  },
+  {
+    "asset_id": "WS-OFFICE-12",
+    "name": "Office Workstation - Engineering",
+    "asset_type": "Workstation",
+    "criticality": "Medium",
+    "location": "Engineering Office - Floor 2",
+    "owner": "Engineering Department",
+    "vulnerabilities": [
+      "Medium - Missing security updates",
+      "Low - No full disk encryption"
+    ],
+    "threats": [
+      "Phishing",
+      "Malware",
+      "Data Breach"
+    ],
+    "existing_controls": [
+      "Antivirus software",
+      "Email filtering",
+      "User training (annual)",
+      "Endpoint detection and response"
+    ],
+    "control_effectiveness": "Adequate",
+    "last_assessment": "2024-01-28"
+  },
+  {
+    "asset_id": "FW-DMZ-01",
+    "name": "DMZ Firewall - Internet Gateway",
+    "asset_type": "Security Appliance",
+    "criticality": "Mission Critical",
+    "location": "DMZ - Data Center",
+    "owner": "Security Operations",
+    "vulnerabilities": [
+      "Low - Minor configuration weaknesses"
+    ],
+    "threats": [
+      "DDoS",
+      "Cyber Attack"
+    ],
+    "existing_controls": [
+      "Next-gen firewall with IPS",
+      "DDoS protection",
+      "24/7 monitoring",
+      "Regular rule reviews",
+      "Redundant configuration"
+    ],
+    "control_effectiveness": "Strong",
+    "last_assessment": "2024-02-03"
+  },
+  {
+    "asset_id": "BACKUP-SRV-01",
+    "name": "Backup Server - Critical Systems",
+    "asset_type": "Backup System",
+    "criticality": "High",
+    "location": "Data Center - Building A",
+    "owner": "IT Operations",
+    "vulnerabilities": [
+      "Medium - Backup data not encrypted",
+      "Low - Slow patch cycle"
+    ],
+    "threats": [
+      "Ransomware",
+      "Data Breach",
+      "System Failure"
+    ],
+    "existing_controls": [
+      "Offline backup copies",
+      "Access restricted to admins only",
+      "Integrity checking"
+    ],
+    "control_effectiveness": "Adequate",
+    "last_assessment": "2024-01-22"
+  },
+  {
+    "asset_id": "IOT-SENSOR-23",
+    "name": "Temperature Sensor Array - Tank Farm",
+    "asset_type": "IoT Device",
+    "criticality": "Medium",
+    "location": "Tank Farm - Zone C",
+    "owner": "Instrumentation Team",
+    "vulnerabilities": [
+      "High - No encryption",
+      "High - Default credentials",
+      "Medium - Outdated firmware"
+    ],
+    "threats": [
+      "Cyber Attack",
+      "Malware"
+    ],
+    "existing_controls": [
+      "Network isolation (VLAN)"
+    ],
+    "control_effectiveness": "Weak",
+    "last_assessment": "2023-12-05"
+  },
+  {
+    "asset_id": "VPN-GATEWAY-01",
+    "name": "Remote Access VPN Gateway",
+    "asset_type": "VPN Server",
+    "criticality": "High",
+    "location": "Data Center - DMZ",
+    "owner": "IT Security",
+    "vulnerabilities": [
+      "Medium - Weak password policy enforcement"
+    ],
+    "threats": [
+      "Cyber Attack",
+      "Insider Threat",
+      "Phishing"
+    ],
+    "existing_controls": [
+      "Multi-factor authentication",
+      "Session logging",
+      "Geo-blocking enabled",
+      "Regular access reviews"
+    ],
+    "control_effectiveness": "Strong",
+    "last_assessment": "2024-01-30"
+  },
+  {
+    "asset_id": "HMI-REFINERY-02",
+    "name": "Human-Machine Interface - Refinery Control",
+    "asset_type": "HMI System",
+    "criticality": "Mission Critical",
+    "location": "Refinery Control Room",
+    "owner": "Refinery Operations",
+    "vulnerabilities": [
+      "Critical - Running Windows 7 (EOL)",
+      "Critical - No antivirus installed",
+      "High - Direct internet connectivity"
+    ],
+    "threats": [
+      "Ransomware",
+      "Malware",
+      "Cyber Attack",
+      "System Failure"
+    ],
+    "existing_controls": [
+      "Physical access control"
+    ],
+    "control_effectiveness": "None",
+    "last_assessment": "2023-10-12"
+  }
+]
