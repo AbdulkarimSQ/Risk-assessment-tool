@@ -1,6 +1,8 @@
-# 🔐 Cybersecurity Risk Assessment Tool
+ Cybersecurity Risk Assessment Tool
 Python-based cybersecurity risk assessment tool for critical infrastructure (IT/OT).
 
+[![Tests](https://github.com/AbdulkarimSQ/Risk-assessment-tool/actions/workflows/tests.yml/badge.svg)](https://github.com/AbdulkarimSQ/Risk-assessment-tool/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/AbdulkarimSQ/Risk-assessment-tool/branch/main/graph/badge.svg)](https://codecov.io/gh/AbdulkarimSQ/Risk-assessment-tool)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -10,7 +12,7 @@ Developed by **Abdulkarim Alqahtani** as part of MSc Computer Science coursework
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -25,7 +27,8 @@ Developed by **Abdulkarim Alqahtani** as part of MSc Computer Science coursework
 
 ---
 
-## 🎯 Overview
+## 
+ Overview
 
 This tool provides a **structured, quantitative approach** to cybersecurity risk assessment for critical infrastructure environments. It evaluates IT/OT assets based on:
 
@@ -58,7 +61,8 @@ This tool addresses these challenges by:
 
 ---
 
-## ✨ Features
+## 
+ Features
 
 ### Core Capabilities
 
@@ -84,7 +88,7 @@ Risk scores are normalized to a **1-10 scale** for consistency.
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 
@@ -121,7 +125,7 @@ You should see the tool load sample assets and display a summary report.
 
 ---
 
-## 📖 Usage
+##  Usage
 
 ### Basic Usage
 
@@ -198,7 +202,7 @@ reporter.print_asset_assessment(assessment)
 
 ---
 
-## 🧮 Methodology
+##  Methodology
 
 ### Risk Calculation Process
 
@@ -262,17 +266,21 @@ Risk-assessment-tool/
 │   ├── risk_calculator.py        # Risk assessment engine
 │   └── report_generator.py       # Report generation
 │
+├── tests/                        # Unit tests (97 tests, 99% coverage)
+│   ├── conftest.py               # Pytest fixtures
+│   ├── test_asset.py             # Asset class tests
+│   ├── test_risk_calculator.py   # Risk calculator tests
+│   └── test_report_generator.py  # Report generator tests
+│
 ├── data/                         # Sample data
 │   └── sample_assets.json        # 10 example assets (Oil & Gas)
 │
-├── docs/                         # Documentation
-│   └── methodology.md            # Detailed methodology
-│
-├── examples/                     # Usage examples
-│   └── basic_usage.py
+├── .github/workflows/            # CI/CD
+│   └── tests.yml                 # GitHub Actions workflow
 │
 ├── config.py                     # Configuration settings
 ├── main.py                       # Main application
+├── pytest.ini                    # Pytest configuration
 ├── requirements.txt              # Python dependencies
 ├── README.md                     # This file
 ├── .gitignore                    # Git ignore rules
@@ -352,7 +360,7 @@ Recommended Action: Monitor
 
 ---
 
-## 🎓 Use Cases
+##  Use Cases
 
 This tool is designed for:
 
@@ -365,7 +373,7 @@ This tool is designed for:
 
 ---
 
-## 🛡️ Compliance Frameworks
+##  Compliance Frameworks
 
 The tool's methodology aligns with:
 
@@ -377,7 +385,7 @@ The tool's methodology aligns with:
 
 ---
 
-## 🚧 Future Enhancements
+##  Future Enhancements
 
 Planned features for future versions:
 
@@ -392,7 +400,7 @@ Planned features for future versions:
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to:
 
